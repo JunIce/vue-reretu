@@ -5,8 +5,8 @@
     <ul>
       <li><router-link to="/">首页</router-link></li>
       <li><router-link to="/find">发现</router-link></li>
-      <li><router-link to="/message">消息</router-link></li>
-      <li><router-link to="/me">个人中心</router-link></li>
+      <li><router-link to="/message/actions">消息</router-link></li>
+      <li><router-link to="/me/panels">个人中心</router-link></li>
       </ul>
     </nav>
   </div>
@@ -34,7 +34,7 @@ li{list-style: none;}
 a{text-decoration: none;}
 .fl{float: left;}
 .fr{float: right;}
-.cl{content: '';display: inline-block;clear: both;overflow: hidden;}
+.cl{content: '';clear: both;overflow: hidden;}
 .navFix{position: fixed;bottom: 0;left: 0;width: 100%;}
 .navFix ul{display: flex;justify-content: space-around;background-color: #fff;border-top:1px solid #eee;}
 .navFix li{width: 25%;text-align: center;}

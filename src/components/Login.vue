@@ -1,10 +1,9 @@
 <template>
- <div>
  	<div id="login-page">
  		<div class="login-head">
  			<div class="head-wrap"></div>
  			<div class="head-title">登录</div>
- 			<div class="head-wrap"><i class="closeBtn"></i></div>
+ 			<div class="head-wrap"><i class="closeBtn" v-on:click="closeLogin"></i></div>
  		</div>
  		<div class="login-main">
  			<p class="hb-account-title">花瓣帐号登录</p>
@@ -27,7 +26,6 @@
  				</div>
  		</div>
  	</div>
- </div>
 </template>
 
 <script>
@@ -37,18 +35,23 @@ export default {
  		return {
 
  		}
+ 	},
+ 	methods:{
+ 		closeLogin:function(){
+ 			this.$emit('loginBol',false)
+ 		}
  	}
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-#login-page{background-color:#fff;}
+#login-page{background-color:#fff;position: fixed;top:0;left: 0;width: 100%}
 .login-head{display: flex;line-height: 4rem;}
 .head-wrap{width: 2rem;margin:0 1rem;}
 .head-title{flex-grow:1;text-align: center;font-weight: bold;font-size: 1.6rem;}
 
-.closeBtn{width: 2rem;height: 2rem;background-image: url(../../assets/close.png);display: inline-block;background-size: contain;vertical-align: middle;cursor: pointer;	margin-top: -.5rem;}
+.closeBtn{width: 2rem;height: 2rem;background-image: url(../assets/close.png);display: inline-block;background-size: contain;vertical-align: middle;cursor: pointer;	margin-top: -.5rem;}
 
 .login-main{padding: 0 2rem;}
 .hb-account-title{font-size: 1.2rem;color:#999;text-align: center;padding: 2rem 0;}

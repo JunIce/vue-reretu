@@ -1,19 +1,1 @@
-<template>
- <div>Me</div>
-</template>
-
-<script>
-export default {
-  name: 'Me',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
-  }
-}
-</script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-
-</style>
+<template> <div id="userPage"> 	<div class="user-home"> 	<div class="user-page-head cl"> 		<div class="ico-wrap"> 			<i class="me-ico me-search"></i> 			<i class="me-ico me-setting"></i> 			<i class="me-ico me-add"></i> 		</div> 	</div> 	<div class="userInfo"> 		<div class="user-headpic"> 			<img src="http://img.reretu.com/2017/05/10/569170b3c0987884_150x150.jpg"> 		</div> 		<div class="user-info"> 			<p>username</p> 			<p><span></span>粉丝 ></p> 		</div> 	</div> 	<div class="user-main"> 		<ul class="user-nav"> 			<li><router-link to="/me/panels">画板</router-link></li> 			<li><router-link to="/me/collection">采集</router-link></li> 			<li><router-link to="/me/favor">喜欢</router-link></li> 			<li><router-link to="/me/subcribe">关注</router-link></li> 		</ul> 		 	</div> 	</div> 		<router-view></router-view> 	<div> 	</div> </div></template><script>export default {  name: 'Me',  data () {    return {    }  }}</script><!-- Add "scoped" attribute to limit CSS to this component only --><style scoped>.user-home{background-color:#fff;}.user-page-head{height: 4rem;line-height: 4rem;padding: 0 .6rem;}.me-ico{width: 2.5rem;height: 2.5rem;display: inline-block;background-size: contain;vertical-align: middle;margin-left:1rem;margin-right: 1rem;}.ico-wrap{line-height: 4rem;float: right;}.me-search{background-image: url(../../assets/search.png);margin-top: -.3rem;}.me-setting{background-image: url(../../assets/setting.png);}.me-add{background-image: url(../../assets/add.png);margin-top: -.2rem;}.userInfo {padding: 2rem;display: flex;}.user-headpic{width: 5rem;height: 5rem;overflow: hidden;border-radius: 50%;display: inline-block;vertical-align: middle;}.user-info{display: inline-block;}.user-headpic img{width: 100%;}.user-info{margin-left: 2rem;}.user-info p{vertical-align: middle;line-height: 2.5rem;}.user-info p:nth-child(1){font-size: 2rem;}.user-nav{display: flex;justify-content: space-around;padding: 	1rem;}.user-nav li{width: 25%;padding: 0 1rem;text-align: center;}.user-nav li a{display: block;background-color: #f4f4f4;border-radius: 5px;overflow: hidden;padding: 1rem 0;color:#333;}</style>
