@@ -31,13 +31,13 @@ export default {
     }
   },
   mounted(){
-  	// setTimeout(()=>{
-  	// 	this.$http.get('/api/v1/home')
-  	// 		.then(res=>{
-  	// 			this.loadding = false
-  	// 			this.items = res.data
-  	// 		})
-  	// },3000)
+  	setTimeout(()=>{
+  		this.$http.get('/api/v1/home')
+  			.then(res=>{
+  				this.loadding = false
+  				this.items = res.data
+  			})
+  	},3000)
   },
   components:{
   	Search,

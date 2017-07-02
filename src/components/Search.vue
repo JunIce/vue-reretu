@@ -25,5 +25,5 @@ export default {
 	padding:.8rem 1rem;
 }
 .SearchWrap label{background-image: url('../assets/search.png');background-repeat: no-repeat;background-size: contain;width: 2rem;height: 2rem;display: inline-block;}
-.searchInput{flex-grow: 1;border:none;outline:none;color:#666;background-color: #eee;padding:0 .7rem;}
+.searchInput{flex-grow: 1;border:none;outline:none;color:#666;background-color: #eee;padding:0 .7rem;vertical-align: middle;line-height: 2rem}
 </style>
